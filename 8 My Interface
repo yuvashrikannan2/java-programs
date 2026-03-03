@@ -1,0 +1,26 @@
+MyInterface.java
+package mypackage;
+public interface MyInterface
+{
+void showMessage();
+}
+MyClass.java
+package mypackage;
+public class MyClass implements MyInterface
+{
+public void showMessage()
+{
+ System.out.println(“Hello! This is a user-defined package and interface 
+example.”);
+}
+}
+MainApp.java
+import mypackage.MyClass;
+public class MainApp
+{
+public static void main(String[]args)
+{
+ MyClass obj=new MyClass();
+ Obj.showMessage();
+}
+}
